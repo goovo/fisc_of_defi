@@ -1,0 +1,256 @@
+{
+	"compiler": {
+		"version": "0.6.2+commit.bacdbe57"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "irecAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "FiscTokenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "UsdtTokenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "minUSD",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "_fiscPercent",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_minUSD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_usdPercent",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "usdtAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "buyToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "FiscPercent",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "UsdPercent",
+						"type": "uint256"
+					}
+				],
+				"name": "changeFiscPercent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "isRun",
+						"type": "bool"
+					}
+				],
+				"name": "changeIsRun",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "minUSD",
+						"type": "uint256"
+					}
+				],
+				"name": "changeMinUSD",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "paramOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "rAddress",
+						"type": "address"
+					}
+				],
+				"name": "changeRecAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllFisc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "FiscAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "getFisc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isRun",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "FiscAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "profit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BSCtestNet/BuyFisc.sol": "BuyFisc"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BSCtestNet/Address.sol": {
+			"keccak256": "0xaa834fb56995369fada3fb806ea650f6b4884465d650a7905bff1d128ebb50d1",
+			"urls": [
+				"bzz-raw://d0cf7adeec73de1f27c5b4b8c893ced986145738a63178b603ad14d34751b9b2",
+				"dweb:/ipfs/QmUz8nPH5uq54WH4t3ASG6U8QgkRXyz3cLSQqHJegXzPEz"
+			]
+		},
+		"contracts/BSCtestNet/BuyFisc.sol": {
+			"keccak256": "0x6bdee8a0fd6f3b138477563036c69d2cd595c8ec339e40893ecd190b5739293b",
+			"urls": [
+				"bzz-raw://da344b34bb2ebd9ecd36d38a829494de76092bdaeac98d117b1065e394590e4c",
+				"dweb:/ipfs/QmNS2APvsGukPj9DLRyeqQ7n8qL5tUTriazj7pNeVrChWe"
+			]
+		},
+		"contracts/BSCtestNet/SafeBEP20.sol": {
+			"keccak256": "0x6fbe8c25880bd5e2cffb44c5ad155adc25a2e2de376c184cde46901844210d55",
+			"urls": [
+				"bzz-raw://c08ccb9a7ed8fee17121a1ac81cbd7e48cfa08fe3e9024d02d6e6746e1dc22d1",
+				"dweb:/ipfs/QmNbLofJnwyrvn4GEs3CHZSC5yYz9pPnDw72UgsbdoWab6"
+			]
+		},
+		"contracts/BSCtestNet/SafeMath.sol": {
+			"keccak256": "0x53532de7ae92f20171a19680ef2a3684884ecd1376963f28cb564d959f57f85b",
+			"urls": [
+				"bzz-raw://7e11f6812c685abf0eecfe95a4c8026adbec769bbdc6f2cec4ddb58db3d31447",
+				"dweb:/ipfs/QmfBLQ9BBvpdRt5behqgGb8V5RPeBhAQeBSdrQ8bk5uYrA"
+			]
+		}
+	},
+	"version": 1
+}

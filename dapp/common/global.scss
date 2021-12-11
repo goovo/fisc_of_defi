@@ -1,0 +1,127 @@
+/* #ifndef APP-NVUE */
+view,
+text {
+	box-sizing: border-box;
+}
+/* #endif */
+
+body {
+	font-size: 28rpx;
+	color: #ffffff;
+	font-family: Miriam Libre,Helvetica Neue, Helvetica, sans-serif;
+	background: #030515;
+}
+
+.status-bar {  
+    height: var(--status-bar-height);  
+    width: 100%;  
+    background-color: #F8F8F8;  
+}  
+ 
+.container{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1180px;
+	background: linear-gradient(170.6deg, #030515 0%, #01052D 100%);
+}
+
+.l{
+	float: left;
+}
+	
+.r{
+	float:right;
+}
+
+.prompt-popup {
+	position: relative;
+	display: inline-block;
+	-webkit-border-radius: 10rpx;
+	border-radius: 10rpx;
+	overflow: hidden;
+	background-color: transparent;
+	text-align: center;
+	width: 560rpx;
+}
+
+.prompt-popup .popup-hd {
+	position: relative;
+	display: inline-flex;
+	padding: 30rpx 160rpx;
+}
+
+.prompt-popup .popup-hd::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background: #e54d42;
+	border-radius: 16rpx 16rpx 0 0;
+	transform: perspective(0.5em) rotateX(5deg);
+}
+
+.prompt-popup .popup-bd {
+	background: #ffffff;
+	border-radius: 10rpx;
+	color: #191919;
+}
+
+.prompt-popup .popup-bd .title {
+	font-size: 30rpx;
+	font-weight: bold;
+	height: 100rpx;
+	line-height: 100rpx;
+}
+
+.prompt-popup .popup-bd .content {
+	width: 100%;
+	font-size: 26rpx;
+	padding: 10rpx 26rpx;
+	line-height: 46rpx;
+	font-size: 28rpx;
+	text-align: left;
+	max-height: 800rpx;
+    box-sizing: border-box;
+}
+
+.prompt-popup .popup-ft {
+	height: 100rpx;
+}
+
+.prompt-popup .next-btn {
+	width: 220rpx;
+	height: 70rpx !important;
+	line-height: 70rpx;
+	margin-top: 40rpx;
+	font-size: 26rpx !important;
+	border-radius: 8rpx !important;
+	color: #da4415 !important;
+}
+
+.prompt-popup .btn-group {
+	text-align: center;
+	margin-top: 40rpx;
+	font-size: 26rpx !important;
+	display: flex;
+}
+
+.prompt-popup .btn-l {
+	width: 200rpx;
+	height: 70rpx !important;
+	line-height: 70rpx;
+	border-radius: 8rpx !important;
+	color: #da4415 !important;
+	float: left;
+}
+
+.prompt-popup .btn-r {
+	width: 200rpx;
+	height: 70rpx !important;
+	line-height: 70rpx;
+	border-radius: 8rpx !important;
+	color: #999999 !important;
+	float: left;
+}	

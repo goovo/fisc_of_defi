@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FISC</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/new.css">
+	<script type="text/javascript" src="./js/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+	<header class="hd">
+		<div class="w-inner">
+			<nav class="hd-nav">
+				<div class="hd-logo"><a href="/"><img src="./images/logo.png" alt=""></a></div>
+				<ul class="hd-menu">
+					<li class="hd-menu-item"><a href="index.html">FISC Introduction</a></li>
+					<li class="hd-menu-item"><a href="outlook.html">Market Expectation</a></li>
+					<li class="hd-menu-item"><a href="token.html">Token Overview</a></li>
+					<li class="hd-menu-item"><a href="team.html">Team Introduction</a></li>
+					<li class="hd-menu-item"><a href="prospects.html">Development Plan</a></li>
+					<li class="hd-menu-item on"><a href="aboutus.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<section class="hd-banner">
+				<span>YEAR 2021</span>
+				<h2>Filecoin Full Storage Computing<br/>Power Token System</h2>
+				<small>Transparent,Efficient And Freedom Filecoin Ecasystem</small>
+			</section>
+		</div>
+	</header>
+	<section class="bd">
+		<div class="bd-inner">
+			<div class="w-inner">
+				<section class="about">
+					<h2 class="box-title">Risk warning</h2>
+					<p class="about-desc">
+						FISC clearly stated that the relevant intended users clearly understand the risks of FISC. Once the investor participates in the investment, it means that he/she understands and accepts the risks of the project, and is willing to personally bear all the corresponding results or follow-up for this. FISC clearly states that it will not bear any direct or indirect losses caused by participating in FISC projects, including:
+					</p>
+					<p class="about-desc">
+						Policy and legal risks: As the current policies and legal supervision for digital assets are not yet mature, their value may not be protected by laws/regulations, and their behavior may be deemed to be a violation of regulations or policies and terminated.
+					</p>
+					<p class="about-desc">
+						Digital asset risk: any digital asset holder and any number of any digital asset value may lose part or all of its value at any time; all losses due to digital asset value reduction (or even zero) shall be borne by the user , FISC does not assume any responsibility.
+					</p>
+					<p class="about-desc">
+						System maintenance risk: FISC will carry out system shutdown maintenance or upgrades from time to time. We cannot guarantee that the services provided are continuous and uninterrupted.
+					</p>
+					<p class="about-desc">
+						Market risk: Due to changes in mining difficulty and/or other mining parameters/attributes, the market price of digital assets fluctuates (the exchange rate between legal currency and digital assets); the value of the digital asset and the decline in the value of digital assets caused by obsolete mining machines etc. FISC does not assume any liability and compensation obligations for investment losses.
+					</p>
+					<p class="about-desc">
+						Unexpected risks: natural disasters, digital asset market crises, wars, or national policy changes, such as unforeseen, unavoidable, and insurmountable force majeure events, or viruses, trojan horses, malicious program attacks, network congestion, system instability, system or the emergence of unexpected events such as equipment failure, communication failure, power failure, data failure, data abnormality, market transaction suspension, third-party service problems, or government actions, etc., may lead to the termination of computing power, the reduction of user investment income and even the loss of principal. FISC assumes no responsibility.
+					</p>
+				</section>
+				<section class="team">
+					<h2 class="box-title">Join Us At</h2>
+					<p class="aboutus-desc">
+						Official Website: XXXXXXXXXX
+					</p>
+					<p class="aboutus-desc">
+						Telegram: XXXXXXXXX 
+					</p>
+					<p class="aboutus-desc">
+						Twitter: XXXXXXXXX
+					</p>
+				</section>
+			</div>
+		</div>
+
+	</section>
+	<footer class="ft">
+		<div class="w-inner">
+			<dl>
+				<dt>About Us</dt>
+				<dd><a href="#">xxx</a></dd>
+				<dd><a href="#">xxx</a></dd>
+			</dl>
+			<dl>
+				<dt>Product Center</dt>
+				<dd><a href="#">xx</a></dd>
+				<dd><a href="#">xxx</a></dd>
+			</dl>
+			<dl>
+				<dt>Market Prospect and solution</dt>
+				<dd><a href="#">Solution</a></dd>
+				<dd><a href="#">xxx</a></dd>
+				<dd><a href="#">xxx</a></dd>
+			</dl>
+		</div>
+	</footer>
+</body>
+</html>
+<script>
+$(document).ready(function()
+{
+	$(".about-tabs-nav-item").click(function()
+	{
+		$(".about-tabs-nav-item").removeClass('on');
+		$(this).addClass("on");
+		var code = $(this).attr("id");
+		$(".about-contents-div").hide();
+		$("#div"+code).show();
+    })
+});  
+</script>

@@ -1,0 +1,25 @@
+{
+	"name": "default",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@walletconnect/client": "^1.6.5",
+		"@walletconnect/qrcode-modal": "^1.6.5",
+		"@walletconnect/web3-provider": "^1.6.5",
+		"eth-json-rpc-filters": "^4.2.0",
+		"eth-json-rpc-middleware": "^6.0.0",
+		"json-rpc-engine": "^5.3.0",
+		"truffle-contract": "^4.0.31",
+		"vue-i18n": "^8.20.0",
+		"web3": "^1.5.2",
+		"web3-provider-engine": "^16.0.1",
+		"web3modal": "^1.9.4"
+	}
+}

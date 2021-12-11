@@ -1,0 +1,121 @@
+body {
+	background: #030515;
+}
+
+#loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+}
+
+#loading ul {
+	height: 126px;
+	list-style: none;
+}
+
+#loading ul li {
+	float: left;
+	width: 16px;
+	height: 20px;
+}
+
+#loading ul li:nth-child(1) {
+	background-color: #f62e74;
+	animation: love1 3s infinite;
+	background: transparent url(../images/loading_logo.png) no-repeat scroll 0px 0px;
+}
+
+#loading ul li:nth-child(2) {
+	background-color: #f45330;
+	animation: love1 3s infinite;
+	animation-delay: 0.15s;
+	background: transparent url(../images/loading_logo.png) no-repeat scroll -16px 0px;
+}
+
+#loading ul li:nth-child(3) {
+	background-color: #ffc883;
+	animation: love1 3s infinite;
+	animation-delay: 0.3s;
+	background: transparent url(../images/loading_logo.png) no-repeat scroll -32px 0px;
+}
+
+#loading ul li:nth-child(4) {
+	background-color: #30d268;
+	animation: love1 3s infinite;
+	animation-delay: 0.45s;
+	background: transparent url(../images/loading_logo.png) no-repeat scroll -48px 0px;
+}
+
+#loading ul li:nth-child(5) {
+	background-color: #006cb4;
+	animation: love1 3s infinite;
+	animation-delay: 0.6s;
+	background: transparent url(../images/loading_logo.png) no-repeat scroll -64px 0px;
+}
+
+#loading ul li:nth-child(6) {
+	background-color: #784697;
+	animation: love2 3s infinite;
+	animation-delay: 0.75s;
+	background: transparent url(../images/loading_logo.png) no-repeat scroll -80px -47px;
+}
+
+#loading ul li:nth-child(7) {
+	background-color: #ffc883;
+	animation: love2 3s infinite;
+	animation-delay: 0.9s;
+	background: transparent url(../images/loading_logo.png) no-repeat scroll -96px -47px;
+}
+
+#loading ul li:nth-child(8) {
+	background-color: #f45330;
+	animation: love2 3s infinite;
+	animation-delay: 1.05s;
+	background: transparent url(../images/loading_logo.png) no-repeat scroll -112px -47px;
+}
+
+#loading ul li:nth-child(9) {
+	background-color: #f62e74;
+	animation: love2 3s infinite;
+	animation-delay: 1.2s;
+	background: transparent url(../images/loading_logo.png) no-repeat scroll -128px -47px;
+}
+
+#loading ul li:nth-child(10) {
+	background-color: #f62e74;
+	animation: love2 3s infinite;
+	animation-delay: 1.35s;
+	background: transparent url(../images/loading_logo.png) no-repeat scroll -144px -47px;
+}
+
+@keyframes love1 {
+
+	30%,
+	50% {
+		height: 72px;
+		transform: translateY(-26px);
+	}
+
+	75%,
+	100% {
+		height: 20px;
+		transform: translateY(0);
+	}
+}
+
+@keyframes love2 {
+
+	30%,
+	50% {
+		height: 72px;
+		transform: translateY(20px);
+	}
+
+	75%,
+	100% {
+		height: 20px;
+		transform: translateY(0);
+	}
+
+}

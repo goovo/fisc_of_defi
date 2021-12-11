@@ -1,0 +1,530 @@
+body {
+	color: #fff;
+}
+
+.w-inner {
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+	position: relative;
+	height: inherit;
+}
+
+.hd {
+	background: url(../images/headbg.png) no-repeat center bottom;
+	background-size: cover;
+	height: 800px;
+	padding-top: 20px;
+}
+
+.hd-logo {
+	margin-top: 10px;
+}
+
+.hd-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.hd-menu {
+	display: flex;
+	flex-direction: row;
+}
+
+.hd-menu-item {}
+
+.hd-menu-item a {
+	display: block;
+	color: #fff;
+	padding: 10px 20px;
+	border-bottom: 2px solid transparent;
+}
+
+.hd-menu-item.on a,
+.hd-menu-item a:hover {
+	border-bottom-color: #fff;
+}
+
+.hd-menu-item+.hd-menu-item {
+	margin-left: 20px;
+}
+
+.hd-banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	background: url(../images/quan.png) no-repeat center bottom;
+	height: 340px;
+	padding-bottom: 40px;
+	position: absolute;
+	bottom: 30%;
+	left: 0;
+	right: 0;
+}
+
+.hd-banner span {
+	font-size: 24px;
+	color: #57C1D5;
+}
+
+.hd-banner h2 {
+	font-size: 38px;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: #FFFFFF;
+	line-height: 44px;
+	background: linear-gradient(0deg, #52C1E0 0%, #6BC096 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-bottom:20px;
+}
+
+.hd-banner small {
+	display: inline-block;
+	border-radius: 12px;
+	background: linear-gradient(90deg, #54C1DA, #70C08B);
+	font-size: 6px;
+	transform: scale(0.8);
+	font-weight: 400;
+	color: #101937;
+	height: 24px;
+	padding-top:5px;
+}
+
+.bd {
+	background: linear-gradient(0deg, #032F1C, #000000);
+	/* background: url(../images/headbg.png) no-repeat center bottom; */
+	/* background-size: cover; */
+}
+
+.bd-inner {
+	padding: 100px 0;
+	background: url(../images/bodybg.png) no-repeat center center;
+}
+
+.bd .w-inner {
+	/* background-size: cover; */
+}
+
+.box-title {
+	font-size: 34px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.about-desc {
+	margin: 0 auto 60px;
+	max-width: 75%;
+	text-align: center;
+	line-height: 30px;
+	font-size:17px;
+}
+
+.about-tabs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.about-contents {
+	flex: 1;
+}
+
+.about-contents .block {
+	padding: 40px 30px;
+	line-height: 30px;
+	background: rgba(0, 0, 0, .3);
+	margin-bottom: 20px;
+}
+
+.about-tabs-nav-item {
+	width: 300px;
+	height: 100px;
+	border-left: 3px solid transparent;
+	cursor: pointer;
+	line-height: 100px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.about-tabs-nav-item-new {
+	line-height: 50px;
+}
+
+.about-tabs-nav-item.on {
+	border-left: 6px solid #1AB437;
+	background: linear-gradient(90deg, rgba(26, 180, 55, 0.1) 0%, rgba(8, 81, 150, 0) 100%);
+}
+
+
+.team {
+	margin-top: 150px;
+}
+
+.team-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.team-item {
+	display: flex;
+	flex-direction: row;
+
+	width: 31%;
+	padding: 50px 30px;
+	background: rgba(255, 255, 255, .1);
+}
+
+.team-item .left {
+	margin-right: 30px;
+}
+
+.team-item h3 {
+	color: #41b41f;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.team-item p {
+	line-height: 22px;
+}
+
+/* ******** footer ******* */
+.ft {
+	background: #000;
+	padding: 80px 0;
+}
+
+.ft .w-inner {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.ft dl {
+	width: 250px;
+	margin-right: 20px;
+}
+
+.ft dt {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.ft dd+dd {
+	margin-top: 10px;
+}
+
+.ft dd a {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	transition: ease 0.5s all;
+}
+
+.ft dd a:hover {
+	color: #ff3c41;
+}
+
+.box-little-title {
+	margin: 0 auto 20px;
+	max-width: 75%;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+
+
+.about-desc-left {
+	margin: 0 auto 40px;
+	max-width: 75%;
+	line-height: 30px;
+}
+
+.about-desc-left-new {
+	margin-bottom: 10px;
+}
+
+.aboutus-desc {
+	margin: 0 auto 20px;
+	max-width: 75%;
+	text-align: center;
+	line-height: 30px;
+}
+
+.prospects-banner {
+	background: url(../images/prospects.png) no-repeat center bottom;
+	height: 787px;
+}
+
+.prospects-banner span {
+	font-size: 40px;
+	font-family: Source Han Sans CN;
+	font-weight: bold;
+	color: #333333;
+}
+
+.prospects-banner-title {
+	font-size: 22px;
+	font-family: PingFang SC;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.prospects-banner-desc {
+	font-size: 16px;
+	font-family: PingFang SC;
+	font-weight: bold;
+	color: #333333;
+	max-width: 246px;
+}
+
+.prospects-banner-list {
+	display: flex;
+	flex-direction: row;
+	padding: 16px 0 0 320px;
+	height: 98px;
+}
+
+.prospects-banner-left {
+	margin-right: 50px;
+	padding-top: 10px;
+}
+
+.prospects-banner-right-even {
+	padding-top: 16px;
+}
+
+.prospects-banner-list-even {
+	padding-left: 490px;
+	padding-top: 5px;
+}
+
+.team-item-new {
+	width: 15%;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+.w-inner-div {
+	width: 80%;
+	height: 120px;
+	background: #42424C;
+	opacity: 0.45;
+	margin-left: 10%;
+	margin-bottom: 80px;
+}
+
+.team-list-token {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.team-item-token {
+	width: 22%;
+	padding: 20px 10px;
+	background: rgba(255, 255, 255, .1);
+}
+
+.team-item-token .left {
+	text-align: center;
+}
+
+.right h3 {
+	font-size: 22px;
+	font-family: PingFang SC;
+	font-weight: 500;
+	color: #FFFFFF;
+	line-height: 26px;
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+.team-newh3{
+	font-size: 13px !important;
+}
+
+.about-desc-new{
+	text-align: left !important;
+	margin-bottom:20px !important;
+}
+
+.team-item-new .left{
+	height:44px;
+}
+
+.right p {
+	line-height: 26px;
+}
+
+.mining-model-box {
+	width: 100%;
+	min-height: 200px;
+	color: #F7FAFF;
+	position: relative;
+	display: inline-block;
+	background: linear-gradient(to right, rgb(66, 66, 76, 0.45) 60%, rgb(25, 25, 25, 0.8) 40%);
+}
+
+.mining-model-box .box-left {
+	width: 60%;
+	padding: 20px 80px 20px 0;
+	float: left;
+	position: relative;
+	display: grid;
+	justify-content: end;
+}
+
+.mining-model-box .box-left .sub-title {
+	line-height: 26px;
+	display: inline-block;
+}
+
+.mining-model-box .box-left .chart-box {
+	padding-top: 40px;
+	display: inline-block;
+}
+
+.mining-model-box .chart-box .pyramid-img {
+	width: 300px;
+	height: 300px;
+	float: left;
+	background: url(../images/chart_pyramid.png) no-repeat center bottom/100% 100%;
+}
+
+.mining-model-box .chart-box .pyramid-content {
+	float: left;
+	margin-left: -60px;
+}
+
+.mining-model-box .chart-box .pyramid-txt {
+	width: 210px;
+	height: 46px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #F7FAFF;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	padding-left: 18px;
+	margin-bottom: 15px;
+	word-break: break-all;
+}
+
+.mining-model-box .chart-box .pyramid-txt-01 {
+	background: url(../images/chart_pyramid_01.png) no-repeat center bottom/100% 100%;
+}
+
+.mining-model-box .chart-box .pyramid-txt-02 {
+	margin-left: 40px;
+	background: url(../images/chart_pyramid_02.png) no-repeat center bottom/100% 100%;
+}
+
+.mining-model-box .chart-box .pyramid-txt-03 {
+	margin-left: 80px;
+	background: url(../images/chart_pyramid_03.png) no-repeat center bottom/100% 100%;
+}
+
+.mining-model-box .chart-box .pyramid-txt-04 {
+	margin-left: 120px;
+	background: url(../images/chart_pyramid_04.png) no-repeat center bottom/100% 100%;
+}
+
+.mining-model-box .box-right {
+	float: left;
+	padding: 40px;
+	position: relative;
+	display: inline-block;
+}
+
+.mining-model-box .box-right .txt {
+	width: 400px;
+	line-height:24px;
+}
+
+.release-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.release-box li {
+	list-style: none;
+}
+
+.release-box .step-items {
+	padding-left: 5px;
+}
+
+.release-box .step-item {
+	position: relative;
+	padding-bottom: 33px;
+}
+
+.release-box .step-item:first-child:before {
+	display: block;
+}
+
+.release-box .step-item:last-child:before {
+	display: none;
+}
+
+.release-box .step-item:before {
+	content: "";
+	position: absolute;
+	left: 2px;
+	top: 0;
+	z-index: 0;
+	width: 2px;
+	height: 100%;
+	background-color: #06A427;
+}
+
+.release-box .step-item-axis {
+	position: absolute;
+	left: -5px;
+	top: 0;
+	z-index: 10;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #032c1a;
+	border: 2px solid #56C68C;
+}
+
+.release-box .step-item-axis:after {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #56C68C;
+	position: relative;
+	top: 3px;
+	left: 3px;
+}
+
+.release-box .step-item .txt {
+	padding-left: 38px;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.prospects-banner-desc-new{
+	font-size:13px;
+}

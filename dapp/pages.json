@@ -1,0 +1,23 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+		"path": "pages/index",
+		"style": {
+			"navigationBarTextStyle": "white"
+		}
+	}, {
+		"path": "pages/wallet",
+		"style": {
+			"navigationBarTextStyle": "white"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "FISC",
+		"navigationBarBackgroundColor": "#0b52be",
+		"navigationStyle": "custom",
+		"backgroundColor": "#FFFFFF"
+	}
+}

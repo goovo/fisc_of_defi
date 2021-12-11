@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<input type="button" value="按钮511"  v-on:click="show511()" />
+			<h3>{{word}}</h3>
+			<input type="button" value="按钮512"  v-on:click="show512()" />
+		</div>
+	</body>
+
+</html>
+<script>
+
+
+
+
+// Module
+var m = { word:'hello, goovo is ok .' };
+
+
+
+// ViewModel
+var vm = new Vue({
+	el: '#app',
+	data: m,
+	methods: {
+		show511(){
+			console.log(' haha , ?? online .');
+			this.word = ' changed by goovo , becasuse is online';
+			},
+		show512(){
+			console.log(' haha , show512 is run.');
+			//ajaxGet('https://bsc.fisc.ai/get', function (data) {
+			//  console.log(data);
+			//  this.word = data.data.fisc_addr;
+			//});
+			var that = this;
+			axios.get('https://bsc.fisc.ai/get').then(function(response){   console.log(response.data.data);that.word = response.data.data.fisc_addr; }).catch(function (error) { // 请求失败处理
+				console.log(error);
+			  });
+			  
+			//that.word =  response.data.data.rpc_url;
+			},
+		}
+	});
+
+
+
+
+</script>
